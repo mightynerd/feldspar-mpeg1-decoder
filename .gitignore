@@ -1,0 +1,8 @@
+.stack-work/
+*~
+video
+*.yuv
+*.bin
+*.mp4
+*.lock
+*.cabal

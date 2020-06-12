@@ -1,0 +1,20 @@
+resolver: lts-14.21
+
+packages:
+- .
+
+# Only the following specific versions have been tested:
+extra-deps: 
+- "raw-feldspar-0.3@sha256:6a895934cfea5fd284b7c49b5c4805a75afa90caed64aeda192f4182c8409f63"
+- "data-hash-0.2.0.1@sha256:0277d99cb8b535ecc375c59e55f1c91faab966d9167a946ef18445dd468ba727"
+- "imperative-edsl-0.8@sha256:d8c18d72df90d172e661d1f385ec7db5ec04c2a68b10b1a3c03da52bc4d731c7"
+- "operational-alacarte-0.3.1@sha256:bfd2d519333356d1f892bc0a0c017d1955f5cd4264aacd43af6e471d7477c12a"
+- "prelude-edsl-0.4@sha256:8784e338e1e764a06be7d95fda6bbc9c72da4b5e6043409100b6078fe214f6e0"
+- "syntactic-3.8.1@sha256:465ba605406af96741ad929b431eee8f5fc2d7caeaa150b77be7e7b3df400da8"
+- "mainland-pretty-0.6.2@sha256:dfa09fecff35bbe0d85c08db6aca166cc18796c523ec728f9fa6c8d6a3b44bcf"
+- "tree-view-0.5@sha256:85fbc67b53c1ef47f020a69051e6a29b27481698fe802cd2ed8ab0108aa69a38"
+- "containers-0.5.11.0@sha256:28ad7337057442f75bc689315ab4ec7bdf5e6b2c39668f306672cecd82c02798"
+#- "mainland-pretty-0.7.0.1@sha256:4ad089aaa0c8606852160a11afbf252daaadbf35ea1020379799c8ecc1a43333"
+# NC:
+- "binary-0.8.8.0@sha256:e9387a7ef2b34c6a23b09664c306e37cc01ae2cb4e4511a1c96ffb14008c24b0,6262"
+- "text-1.2.4.0@sha256:8c24450feb8e3bbb7ea3e17af24ef57e85db077c4bf53e5bcc345b283d1b1d5b,10081"

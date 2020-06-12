@@ -1,0 +1,4 @@
+# macroblock_type for I-pictures
+# VLC   quant   motion_f    motion_back     pattern     intra
+1       0       0           0               0           1
+01      1       0           0               0           1
