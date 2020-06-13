@@ -20,6 +20,8 @@ $ git clone https://github.com/mightynerd/feldspar-mpeg1-decoder
 $ cd feldspar-mpeg1-decoder
 $ stack build
 ```
+**NOTE:** You may have to add `allow-newer: true` to your global stack config because of our quirky config, usually located in `~/.stack/stack.yaml`
+
 Once this has completed, you can use `stack run` to run the decoder:
 ```
 $ stack run -- "INPUT_FILE" run
