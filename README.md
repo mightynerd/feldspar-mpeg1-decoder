@@ -8,7 +8,7 @@ The decoder can decode MPEG-1 video files with the following limitations (and po
 - The horizontal resolution must be a multiple of 16.
 
 Usage limitaions of the decoder:
-- As Feldspar doesn't support command line arguments nor string manipulation, the input file names must be supplied to the Haskell `main` function or hardcoded in `Main.hs`. This also means that Feldspar has to generate the C source code and compile it every time the input file name is changed.
+- As Feldspar doesn't support command line arguments nor string manipulation, the input file names must be supplied to the Haskell `main` function or hardcoded in `Main.hs` (see the usage section). This also means that Feldspar has to generate the C source code and compile it every time the input file name is changed.
 - The output file format is `YV12` as described [here](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#yv12)
 - The output file name is `../v.yuv` unless modified in `Main.hs`
 - The decoder does not recover from any errors in the input and crashes even upon successfully completing the decoding process.
@@ -20,14 +20,14 @@ $ git clone https://github.com/mightynerd/feldspar-mpeg1-decoder
 $ cd feldspar-mpeg1-decoder
 $ stack build
 ```
-Once this has completed, we advice you to use the decoder with GHCI:
+Once this has completed, you can use `stack run` to run the decoder:
 ```
-$ cd src/
-$ stack exec ghci
-> :load Main.hs
-> decode "INPUT_FILE"
+$ stack run -- "INPUT_FILE" run
 ```
-This will generate the C code, compile it and decode `INPUT_FILE`. The output will be located in `../v.yuv`
+Where the first argument is the input MPEG-1 video file. The second argument may be:
+- `run` which generates the C code, compiles it and decodes the input file. 
+- `compile` which only outputs the generated C code to stdout.
+
 ### Creating input files
 To create a input file, use ffmpeg as follows:
 ```
